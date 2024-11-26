@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Hospital, Brain, Stethoscope, RadioTower, Blocks } from "lucide-react";
 
