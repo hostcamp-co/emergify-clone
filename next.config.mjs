@@ -33,17 +33,12 @@ const nextConfig = {
     ];
   },
 
-  // webpack: (config, { isServer }) => {
-  //   if (!isServer) {
-  //     config.resolve.fallback = {
-  //       ...config.resolve.fallback,
-  //       async_hooks: false,
-  //     };
-  //   }
-  //   return config;
-  // },
-  // // Correct way to specify packages to transpile in Next.js
-  // transpilePackages: ["lucide-react"],
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals.push("async_hooks"); // Mark async_hooks as external
+    }
+    return config;
+  },
 };
 
 export default nextConfig;

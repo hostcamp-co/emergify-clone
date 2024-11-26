@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Hospital,
-  Brain,
-  Stethoscope,
-  RadioTower,
-  Blocks,
-} from "lucide-react/dist/esm/icons";
+import { Hospital, Brain, Stethoscope, RadioTower, Blocks } from "lucide-react";
 
 function Features() {
   const features = [
