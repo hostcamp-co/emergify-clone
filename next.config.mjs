@@ -10,6 +10,7 @@ const nextConfig = {
       },
     ],
   },
+
   async headers() {
     return [
       {
@@ -30,6 +31,18 @@ const nextConfig = {
         ],
       },
     ];
+  },
+
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        async_hooks: false,
+      };
+    }
+    // Add transpilePackages for lucide-react
+    config.transpilePackages = ["lucide-react"];
+    return config;
   },
 };
 
