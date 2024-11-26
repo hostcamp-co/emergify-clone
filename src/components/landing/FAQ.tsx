@@ -4,16 +4,16 @@ import React from "react";
 function FAQ() {
   return (
     <section className="bg-white dark:bg-gray-900">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
+        <h2 className="mb-8 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Frequently asked questions
         </h2>
-        <div className="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
+        <div className="grid border-t border-gray-200 pt-8 text-left dark:border-gray-700 md:grid-cols-2 md:gap-16">
           <div>
             <div className="mb-10">
-              <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+              <h3 className="mb-4 flex items-center text-lg font-medium text-gray-900 dark:text-white">
                 <svg
-                  className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  className="mr-2 h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -34,9 +34,9 @@ function FAQ() {
               </p>
             </div>
             <div className="mb-10">
-              <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+              <h3 className="mb-4 flex items-center text-lg font-medium text-gray-900 dark:text-white">
                 <svg
-                  className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  className="mr-2 h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -56,9 +56,9 @@ function FAQ() {
               </p>
             </div>
             <div className="mb-10">
-              <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+              <h3 className="mb-4 flex items-center text-lg font-medium text-gray-900 dark:text-white">
                 <svg
-                  className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  className="mr-2 h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ function FAQ() {
                 Feel free to{" "}
                 <a
                   href="#"
-                  className="font-medium underline text-fbprimary-600 dark:text-fbprimary-500 hover:no-underline"
+                  className="text-fbprimary-600 dark:text-fbprimary-500 font-medium underline hover:no-underline"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -90,9 +90,9 @@ function FAQ() {
               </p>
             </div>
             <div className="mb-10">
-              <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+              <h3 className="mb-4 flex items-center text-lg font-medium text-gray-900 dark:text-white">
                 <svg
-                  className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  className="mr-2 h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@ function FAQ() {
                 Find out more information by{" "}
                 <a
                   href="#"
-                  className="font-medium underline text-fbprimary-600 dark:text-fbprimary-500 hover:no-underline"
+                  className="text-fbprimary-600 dark:text-fbprimary-500 font-medium underline hover:no-underline"
                 >
                   reading the license
                 </a>
@@ -126,9 +126,9 @@ function FAQ() {
           </div>
           <div>
             <div className="mb-10">
-              <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+              <h3 className="mb-4 flex items-center text-lg font-medium text-gray-900 dark:text-white">
                 <svg
-                  className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  className="mr-2 h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +145,7 @@ function FAQ() {
                 The free updates that will be provided is based on the{" "}
                 <a
                   href="#"
-                  className="font-medium underline text-fbprimary-600 dark:text-fbprimary-500 hover:no-underline"
+                  className="text-fbprimary-600 dark:text-fbprimary-500 font-medium underline hover:no-underline"
                 >
                   roadmap
                 </a>{" "}
@@ -154,9 +154,9 @@ function FAQ() {
               </p>
             </div>
             <div className="mb-10">
-              <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+              <h3 className="mb-4 flex items-center text-lg font-medium text-gray-900 dark:text-white">
                 <svg
-                  className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  className="mr-2 h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +173,7 @@ function FAQ() {
                 The{" "}
                 <a
                   href="#"
-                  className="font-medium underline text-fbprimary-600 dark:text-fbprimary-500 hover:no-underline"
+                  className="text-fbprimary-600 dark:text-fbprimary-500 font-medium underline hover:no-underline"
                 >
                   free version
                 </a>{" "}
@@ -187,9 +187,9 @@ function FAQ() {
               </p>
             </div>
             <div className="mb-10">
-              <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+              <h3 className="mb-4 flex items-center text-lg font-medium text-gray-900 dark:text-white">
                 <svg
-                  className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  className="mr-2 h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -215,9 +215,9 @@ function FAQ() {
               </p>
             </div>
             <div className="mb-10">
-              <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+              <h3 className="mb-4 flex items-center text-lg font-medium text-gray-900 dark:text-white">
                 <svg
-                  className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  className="mr-2 h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +244,7 @@ function FAQ() {
                 Find out more information by{" "}
                 <a
                   href="#"
-                  className="font-medium underline text-fbprimary-600 dark:text-fbprimary-500 hover:no-underline"
+                  className="text-fbprimary-600 dark:text-fbprimary-500 font-medium underline hover:no-underline"
                 >
                   reading the license
                 </a>
