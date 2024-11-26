@@ -40,10 +40,10 @@ const nextConfig = {
         async_hooks: false,
       };
     }
-    // Add transpilePackages for lucide-react
-    config.transpilePackages = ["lucide-react"];
     return config;
   },
+  // Correct way to specify packages to transpile in Next.js
+  transpilePackages: ["lucide-react"],
 };
 
 export default nextConfig;
