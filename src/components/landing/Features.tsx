@@ -1,35 +1,52 @@
 import React from "react";
 import { Hospital, Brain, Stethoscope, RadioTower, Blocks } from "lucide-react";
 
+function GetIcon({ name, className }: { name: string; className: string }) {
+  switch (name) {
+    case "hospital":
+      return <Hospital className={className} />;
+    case "brain":
+      return <Brain className={className} />;
+    case "stethoscope":
+      return <Stethoscope className={className} />;
+    case "radioTower":
+      return <RadioTower className={className} />;
+    case "blocks":
+      return <Blocks className={className} />;
+    default:
+      return null; // Handle unknown icon names
+  }
+}
+
 function Features() {
   const features = [
     {
       title: "First Aid",
-      Icon: Brain,
+      icon: "brain",
       description:
         "Access instant, AI-powered first aid guidance. Simply describe the situation, and Emergify provides clear, step-by-step instructions on what to do while you wait for professional help.",
     },
     {
       title: "Hospital Finder",
-      Icon: Hospital,
+      icon: "hospital",
       description:
         "Locate the nearest and most appropriate hospital for your specific needs. Emergify analyzes your emergency description and ranks hospitals based on their capabilities and proximity.",
     },
     {
       title: "Medical Connect",
-      Icon: Stethoscope,
+      icon: "stethoscope",
       description:
         "Connect with qualified medical professionals remotely when expert advice is crucial. Emergify matches you with the right specialist quickly, especially valuable in disaster zones or remote areas.",
     },
     {
       title: "Accessibility",
-      Icon: RadioTower,
+      icon: "radioTower",
       description:
         "Emergify works across multiple platforms – web, mobile app, SMS, and even voice commands – ensuring access even with limited internet or for users with disabilities.",
     },
     {
       title: "Integrations",
-      Icon: Blocks,
+      icon: "blocks",
       description:
         "Governments and organizations can integrate Emergify's APIs to strengthen existing emergency response systems and improve community healthcare access.",
     },
@@ -50,10 +67,13 @@ function Features() {
         </div>
 
         <div className="space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
-          {features.map(({ title, Icon, description }) => (
+          {features.map(({ title, icon, description }) => (
             <div key={title}>
               <div className="bg-fbprimary-100 dark:bg-fbprimary-900 mb-4 flex h-10 w-10 items-center justify-center rounded-full lg:h-12 lg:w-12">
-                <Icon className="text-fbprimary-600 dark:text-fbprimary-300 h-5 w-5 lg:h-6 lg:w-6" />
+                <GetIcon
+                  name={icon}
+                  className="text-fbprimary-600 dark:text-fbprimary-300 h-5 w-5 lg:h-6 lg:w-6"
+                />
               </div>
               <h3 className="mb-2 text-xl font-bold dark:text-white">
                 {title}

@@ -32,13 +32,6 @@ const nextConfig = {
       },
     ];
   },
-
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      config.externals.push("async_hooks"); // Mark async_hooks as external
-    }
-    return config;
-  },
 };
 
 export default nextConfig;
